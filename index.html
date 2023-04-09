@@ -1,47 +1,97 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <title>Slider</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./styles.css">
+  <title>Document</title>
 </head>
 
-<body class="root">
-  <header class="header">
-    <div class="header__logo-container">
-      <img src="./images/slider-logo.svg" alt="slider-logotype" class="header__logo">
-      <p class="header__logo-sub">Slider</p>
-    </div>
+<body>
+  <header>
+    <h1>Candle HandMade </h1>
+    <span>[ Portfolio Gallery ]</span>
   </header>
-  <main class="container">
-    <div class="slide"
-      style="background-image: url('https://images.unsplash.com/photo-1667327670783-4a7d67eeb505?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');">
-      <h2>Pasta</h2>
+  <div>
+    <h2 class="space_title space_title_text">About me</h2>
+  </div>
+  <section class="about">
+    <img class="about-img" src="./images/angels.jpg" alt="profile-image">
+    <div class="about-box">
+      <h2 class="about_info">Меня зовут Алёна.
+        Я делаю натуральные свечи из вощины с 2022 года. </h2>
+      <p class="about_description">
+        Так как это мое хобби, я не особо об этом думаю. То есть я не покупала рекламу, не настраивала таргет в
+        Инстаграме, это просто люди, которые пришли от моих знакомых и друзей. Я делаю это для себя и очень радуюсь,
+        когда мое видение откликается. Сарафанное радио — самый простой и действенный способ продвижения.
+      </p>
     </div>
-    <div class="slide" style="
-          background-image: url('https://images.unsplash.com/photo-1643487237895-ed2e3d2eb6ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1888&q=80');
-        ">
-      <h2>Macaron</h2>
-    </div>
-    <div class="slide" style="
-          background-image: url('https://images.unsplash.com/photo-1561336166-49a81db676ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
-        ">
-      <h2>Coffee</h2>
-    </div>
-    <div class="slide" style="
-          background-image: url('https://images.unsplash.com/photo-1579697096985-41fe1430e5df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80');
-        ">
-      <h2>Bread</h2>
-    </div>
-    <div class="slide" style="
-          background-image: url('https://images.unsplash.com/photo-1606188074044-fcd750f6996a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1664&q=80');
-        ">
-      <h2>Cake</h2>
-    </div>
-  </main>
-  <script src="./app.js"></script>
+
+  </section>
+
+
+  <div>
+    <h2 class="space_title space_title_text">How create</h2>
+  </div>
+
+  <section class="create">
+    <ul class="create">
+      <li class="create">
+        <p class="create-text">
+          Вощина - это экологически чистый материал из пчелиного воска. При горении восковой свечи ручной работы
+          выделяются фитонциды, которые обеззараживают воздух и благотворно влияют на организм: стимулируют иммунитет,
+          проясняют мысли, расслабляют, успокаивают и улучшают самочувствие. А вместе с травами и эфирными маслами
+          эффект усиливается.
+        </p>
+      </li>
+      <li class="create">
+        <p class="create-text">
+          Вощина - это экологически чистый материал из пчелиного воска. При горении восковой свечи ручной работы
+          выделяются фитонциды, которые обеззараживают воздух и благотворно влияют на организм: стимулируют иммунитет,
+          проясняют мысли, расслабляют, успокаивают и улучшают самочувствие. А вместе с травами и эфирными маслами
+          эффект усиливается.
+        </p>
+      </li>
+    </ul>
+
+  </section>
+
+  <div>
+    <h2 class="space_title space_title_text">Gallery candles </h2>
+  </div>
+
+  <section class="gallery">
+    <ul>
+      <li>
+        <img src="./images/angels.jpg" alt="candle-image">
+      </li>
+      <li>
+        <img src="./images/Candle-1.jpg" alt="candle-image">
+      </li>
+      <li>
+        <img src="./images/candle-2.jpg" alt="candle-image">
+      </li>
+      <li>
+        <img src="./images/candle-3.jpg" alt="candle-image">
+      </li>
+      <li>
+        <img src="./images/candle-4.jpg" alt="candle-image">
+      </li>
+      <li>
+        <img src="./images/candle-5.jpg" alt="candle-image">
+      </li>
+      <li>
+        <img src="./images/candle-5.jpg" alt="candle-image">
+      </li>
+      <li>
+        <img src="./images/candle-5.jpg" alt="candle-image">
+      </li>
+    </ul>
+
+  </section> <!-- / projects -->
 </body>
 
 </html>

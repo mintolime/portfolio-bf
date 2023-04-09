@@ -1,84 +1,191 @@
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.root {
+body {
+  max-width: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  background-color: #6c919953;
+}
+
+body a {
+  color: #fff;
+}
+
+
+
+/* body img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+} */
+
+
+header {
+  background-color: #84b4b1;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0 120px;
+}
+
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 65px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 0.8;
+  padding: 50px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header span {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 25px;
+  line-height: 1;
+}
+
+header p {
+  padding-top: 30px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+
+.gallery {
+  width: 100%;
+}
+
+.gallery ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: column dense;
+  grid-template-areas:
+    ". . . ."
+    ". . . .";
+  padding: 50px 50px;
+  margin: 0;
+}
+
+.gallery li {
+  width: 100%;
+  list-style: none;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 35px;
+  flex-direction: row;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+.about-img {
+  width: 400px;
+}
+
+.about_description {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.about-box {
+  max-width: 700px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  font-family: 'Muli', sans-serif;
+  padding: 10px 15px;
+  gap: 20px;
+}
+
+.about_info {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  line-height: 1;
+  white-space: pre-line;
+}
+
+
+.space_title_text {
+  top: 0;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: solid;
+  margin: 50px;
+  font-style: normal;
+  font-weight: 400;
   overflow: hidden;
-  margin: 0;
-  background: rgb(43, 43, 42);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-}
-
-.header {
-  max-width: 468px;
-  color: rgb(138, 138, 134);
-  /* margin: auto; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-
-.header__logo-container {
-  display: flex;
-  align-items: center;
-}
-
-.header__logo {
-  width: 100px;
-}
-
-.header__logo-sub {
-  margin-left: 10px;
-  margin-bottom: 25px;
-  font-size: 1.5em;
-}
-
-
-.container {
-  width: 100%;
-  display: flex;
-  padding: 0 20px;
-}
-
-.slide {
-  height: 80vh;
-  border-radius: 20px;
-  margin: 10px;
-  cursor: pointer;
   color: #fff;
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* Выравнивание заголовка по центру,
+  ** можно использовать left, right */
+}
+
+.space_title h2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.space_title:before,
+.space_title:after {
+  /* Обязательно указываем пустое свойство content,
+    ** иначе псевдоэлементы не появятся на сайте */
+  content: "";
+  /* Указываем что наши линии будут строчно-блочные и
+    ** выравнивание по высоте - по центру */
+  display: inline-block;
+  vertical-align: middle;
+  /* Задаем ширину  и выбираем высоту линии,
+    */
+  width: 30px;
+  height: 1px;
+  /* Добавляем цвет для линии */
+  background-color: #ffffff;
+  /* Добавляем пседоэлемантам возможность изменить
+    ** позицию линии, для создания отступов от текста */
   position: relative;
-  transition: all 500ms easy-in-out;
-  object-position: top;
-  object-fit: cover;
 }
 
-
-.slide h2 {
-  position: absolute;
-  font-size: 20px;
-  left: 20px;
-  bottom: 20px;
-  margin: 0;
-  opacity: 0;
+.space_title:before {
+  /* Смещаем левую линию на 100% влево, чтобы линия
+    ** встала рядом с текстом слева */
+  margin-left: -100%;
+  /* Указываем в пикселях отступ линии от текста заголовка */
+  left: -14px;
 }
 
-.slide.active {
-  flex: 10;
-}
-
-.slide.active h2 {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+.space_title:after {
+  /* Смещаем правую линию на 100% вправо, чтобы
+    ** линия встала рядом с текстом справа */
+  margin-right: -100%;
+  /* Указываем в пикселях отступ линии от текста заголовка */
+  right: -14px;
 }
