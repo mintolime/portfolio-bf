@@ -62,7 +62,6 @@ img {
   border-radius: 10%;
 }
 
-
 .gallery {
   min-height: calc(100vh - 80px);
   display: grid;
@@ -72,7 +71,7 @@ img {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   gap: 10px;
-  padding:  60px;
+  padding: 60px;
 }
 
 .gallery__item {
@@ -101,18 +100,17 @@ img {
 
 .gallery__item:nth-child(1) {
   grid-column: span 2;
-grid-row: span 2;
+  grid-row: span 2;
 }
 
 .gallery__item:nth-child(3) {
-grid-column: span 2;
-grid-row: span 2;
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .gallery__item:nth-child(2) {
   grid-column: 3/6;
   grid-row: span 3
-
 }
 
 .gallery__item:nth-child(4) {
@@ -135,10 +133,11 @@ grid-row: span 2;
   color: #fff;
   gap: 15px;
 }
+
 @media screen and (max-width: 1000px) {
-  .about  {
-   flex-direction: column;
-   align-items: center;
+  .about {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -205,8 +204,6 @@ grid-row: span 2;
   font-weight: 400;
   overflow: hidden;
   color: #fff;
-  /* Выравнивание заголовка по центру,
-  ** можно использовать left, right */
 }
 
 .space_title h2 {
