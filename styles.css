@@ -28,16 +28,6 @@ body a {
   color: #fff;
 }
 
-
-
-/* body img {
-  max-width: 100%;
-  height: auto;
-  padding: 0;
-  margin: 0;
-} */
-
-
 header {
   background-color: #84b4b1;
   color: #fff;
@@ -104,6 +94,9 @@ img {
   font-family: "Montserrat", sans-serif;
   color: #fff;
 }
+@media screen {
+  
+}
 
 .about-img {
   width: 400px;
@@ -132,6 +125,28 @@ img {
   white-space: pre-line;
 }
 
+.create-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.create-item {
+  max-width: 300px;
+  min-height: 300px;
+  list-style: none;
+  color: #6e6e6e;
+  background-color: #fff;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  padding: 10px;
+}
+
+.create-text {
+  white-space: pre-line;
+}
 
 .space_title_text {
   top: 0;
