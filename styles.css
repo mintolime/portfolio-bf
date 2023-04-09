@@ -68,17 +68,17 @@ img {
 }
 
 .gallery ul {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px 10px;
-  grid-auto-flow: column dense;
-  grid-template-areas:
-    ". . . ."
-    ". . . .";
-  padding: 50px 50px;
-  margin: 0;
+width: 100%;
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: max-content;
+gap: 10px 10px;
+grid-auto-flow: column dense;
+grid-template-areas:
+". . . ." 
+". . . .";
+padding: 50px 50px;
+margin: 0;
 }
 
 .gallery li {
@@ -116,7 +116,7 @@ img {
   display: flex;
   flex-direction: column;
   padding: 10px 15px;
-  gap: 20px;
+  gap: 30px;
 }
 
 .about_info {
