@@ -46,7 +46,7 @@ header {
   font-family: "Montserrat", sans-serif;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .header_title {
     font-size: 45px;
     line-height: 1;
@@ -83,7 +83,7 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .gallery {
     padding: 10px;
   }
@@ -161,7 +161,7 @@ img {
   height: 400px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .about-img {
     width: 300px;
     height: 300px;
