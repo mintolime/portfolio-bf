@@ -35,7 +35,7 @@ header {
   padding: 30px 0 120px;
 }
 
-header h1 {
+.header_title {
   text-align: center;
   text-transform: uppercase;
   font-size: 65px;
@@ -44,6 +44,13 @@ header h1 {
   line-height: 0.8;
   padding: 50px 0;
   font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 400px) {
+  .header_title {
+    font-size: 45px;
+    line-height: 1;
+  }
 }
 
 header span {
@@ -74,6 +81,12 @@ img {
   gap: 10px;
   padding: 60px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 400px) {
+  .gallery {
+    padding: 10px;
+  }
 }
 
 .gallery__item {
@@ -146,6 +159,13 @@ img {
 .about-img {
   width: 400px;
   height: 400px;
+}
+
+@media screen and (max-width: 400px) {
+  .about-img {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .about_description {
