@@ -63,6 +63,7 @@ img {
 }
 
 .gallery {
+  max-width: 980px;
   min-height: calc(100vh - 80px);
   display: grid;
   /* grid-template-columns: repeat(4, 1fr) 2fr 200px; */
@@ -72,6 +73,7 @@ img {
   box-sizing: border-box;
   gap: 10px;
   padding: 60px;
+  margin: 0 auto;
 }
 
 .gallery__item {
